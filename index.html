@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Политика конфиденциальности AudioKlad</title>
+<meta name="description" content="Политика конфиденциальности приложения AudioKlad / AudioKlad privacy policy">
+<!-- Generated from docs/privacy-policy.md in the AudioKlad repository: keep both in sync. No external resources on purpose. -->
+<style>
+  :root { --bg: #fbf8ff; --fg: #1b1b21; --muted: #5d5e68; --accent: #4c5c8a; --line: #dcdde6; --code: #ececf4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121318; --fg: #e4e1e9; --muted: #a9aab5; --accent: #b6c4ff; --line: #34353d; --code: #24252c; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+  nav { display: flex; gap: 16px; font-size: 15px; margin-bottom: 8px; }
+  a { color: var(--accent); }
+  h1 { font-size: 28px; line-height: 1.25; margin: 32px 0 8px; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  .date { color: var(--muted); margin: 0 0 16px; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  code { background: var(--code); border-radius: 4px; padding: 1px 5px; font-size: 14px; overflow-wrap: anywhere; }
+  .table { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid var(--line); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 56px 0 0; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#ru">Русский</a><a href="#en">English</a></nav>
+
+<section id="ru" lang="ru">
+<h1>Политика конфиденциальности AudioKlad</h1>
+<p class="date">Дата вступления в силу: 14 октября 2026 г.</p>
+<p>AudioKlad — приложение для прослушивания аудиокниг, которые уже есть на вашем устройстве. Эта политика описывает,
+какие данные приложение обрабатывает и где они хранятся.</p>
+
+<h2>Какие данные обрабатываются</h2>
+<p>Все данные хранятся <strong>только на вашем устройстве</strong>, в личной памяти приложения:</p>
+<ul>
+  <li>сведения о библиотеке: названия, авторы и другие теги аудиофайлов, длительность, обложки, извлечённые из файлов;</li>
+  <li>адреса файлов и папок, которые вы выбрали через системное окно выбора файлов (доступ к ним даёт Android; право
+    на изменение используется только для удаления файлов, когда вы сами об этом попросите — см. «Удаление данных»);</li>
+  <li>копии аудиофайлов, которые вы передали в приложение через «Поделиться» (они нужны, потому что такой доступ временный);</li>
+  <li>место остановки прослушивания для каждой книги и отметки «прослушано», «избранное»;</li>
+  <li>закладки и ваши заметки к ним;</li>
+  <li>настройки: скорость воспроизведения, тема, шаг перемотки, язык интерфейса.</li>
+</ul>
+
+<h2>Датчик движения</h2>
+<p>Пока включён таймер сна и идёт воспроизведение, приложение читает акселерометр устройства, чтобы узнать, двигается ли
+телефон: если его двигали, таймер начинает отсчёт заново. Показания датчика обрабатываются только в памяти, не
+сохраняются, не записываются в журналы и никуда не передаются. Когда таймер выключен, датчик не используется.</p>
+
+<h2>Чего приложение не делает</h2>
+<ul>
+  <li>Не имеет доступа к интернету (разрешение <code>INTERNET</code> не запрашивается) и <strong>ничего никуда не отправляет</strong>.</li>
+  <li>Не использует аналитику, рекламу, сбор отчётов о сбоях, учётные записи и сторонние SDK, собирающие данные.</li>
+  <li>Не читает другие файлы на устройстве — только те, которые вы выбрали сами.</li>
+  <li>Не передаёт данные третьим лицам.</li>
+  <li>Резервное копирование в облако и перенос данных на новое устройство отключены: данные приложения не покидают устройство.</li>
+</ul>
+
+<h2>Разрешения</h2>
+<div class="table"><table>
+  <tr><th>Разрешение</th><th>Зачем</th></tr>
+  <tr><td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td><td>Воспроизведение продолжается, когда приложение свёрнуто или экран выключен</td></tr>
+  <tr><td><code>POST_NOTIFICATIONS</code></td><td>Уведомление с кнопками управления воспроизведением (Android 13+; можно запретить — воспроизведение будет работать)</td></tr>
+  <tr><td><code>WAKE_LOCK</code></td><td>Не даёт устройству «уснуть» во время воспроизведения при выключенном экране, чтобы звук и таймер сна работали (добавляет библиотека Media3)</td></tr>
+  <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Добавляет библиотека Media3; приложение сеть не использует</td></tr>
+  <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Добавляет библиотека WorkManager, на которой работают виджеты рабочего стола (Jetpack Glance): после перезагрузки она восстанавливает свои фоновые задачи. Приложение своих задач не планирует и при загрузке ничего не делает</td></tr>
+  <tr><td><code>dev.rband.audiobookplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td><td>Внутреннее разрешение Android для приёма системных событий только внутри самого приложения</td></tr>
+</table></div>
+<p>Разрешение на доступ ко всему хранилищу не запрашивается: файлы выбираются через системное окно выбора.
+Датчик движения (акселерометр) разрешения не требует.</p>
+
+<h2>Удаление данных</h2>
+<ul>
+  <li>Удаление книги в приложении удаляет её сведения, закладки, обложку и сделанные приложением копии файлов.</li>
+  <li>Ваши собственные файлы (импортированные из папки или выбранные вручную) удаляются с устройства <strong>только если при
+    удалении книги вы сами отметили «Удалить файлы»</strong>. Перед удалением приложение показывает, какой файл или какая папка
+    будут удалены; это нельзя отменить. Без этой отметки ваши файлы остаются на месте.</li>
+  <li>Очистка данных приложения в настройках Android или удаление приложения удаляет все его данные.</li>
+</ul>
+
+<h2>Дети</h2>
+<p>Приложение не собирает персональные данные, в том числе данные детей.</p>
+
+<h2>Изменения политики</h2>
+<p>При изменении политики новая редакция публикуется по той же ссылке с новой датой вступления в силу.</p>
+
+<h2>Контакты</h2>
+<p>Вопросы о конфиденциальности: <a href="mailto:centerneon@gmail.com">centerneon@gmail.com</a></p>
+<p>Если вы напишете на этот адрес, ваш адрес электронной почты и письмо используются только для ответа вам
+и никому не передаются.</p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<h1>AudioKlad Privacy Policy</h1>
+<p class="date">Effective date: October 14, 2026</p>
+<p>AudioKlad is a player for audiobooks that are already on your device. This policy describes what data the app
+handles and where it is kept.</p>
+
+<h2>Data the app handles</h2>
+<p>All data stays <strong>only on your device</strong>, in the app's private storage:</p>
+<ul>
+  <li>library information: titles, authors and other tags of the audio files, durations, covers taken from the files;</li>
+  <li>the addresses of files and folders you picked in the system file picker (Android grants the access; the right to
+    change them is used only to delete files when you ask for it — see "Deleting data");</li>
+  <li>copies of audio files you sent to the app with "Share" (needed because that access is temporary);</li>
+  <li>where you stopped in each book, and the "finished" and "favorite" marks;</li>
+  <li>bookmarks and your notes on them;</li>
+  <li>settings: playback speed, theme, rewind step, interface language.</li>
+</ul>
+
+<h2>Motion sensor</h2>
+<p>While the sleep timer is on and a book is playing, the app reads the device's accelerometer to tell whether the phone
+is being moved: if it is, the timer starts counting again. The sensor readings are handled only in memory; they are not
+saved, not written to logs and not sent anywhere. While the timer is off the sensor is not used.</p>
+
+<h2>What the app does not do</h2>
+<ul>
+  <li>It has no internet access (the <code>INTERNET</code> permission is not requested) and <strong>sends nothing anywhere</strong>.</li>
+  <li>No analytics, advertising, crash reporting, accounts or third-party SDKs that collect data.</li>
+  <li>It does not read other files on the device — only the ones you picked yourself.</li>
+  <li>It shares no data with third parties.</li>
+  <li>Cloud backup and transfer to a new device are switched off: the app's data never leaves the device.</li>
+</ul>
+
+<h2>Permissions</h2>
+<div class="table"><table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td><td>Playback continues while the app is in the background or the screen is off</td></tr>
+  <tr><td><code>POST_NOTIFICATIONS</code></td><td>The notification with playback controls (Android 13+; can be denied, playback still works)</td></tr>
+  <tr><td><code>WAKE_LOCK</code></td><td>Keeps the device awake during playback with the screen off, so that the sound and the sleep timer keep working (added by the Media3 library)</td></tr>
+  <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Added by the Media3 library; the app does not use the network</td></tr>
+  <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Added by the WorkManager library that the home screen widgets (Jetpack Glance) run on: it restores its background work after a reboot. The app schedules no work of its own and does nothing at boot</td></tr>
+  <tr><td><code>dev.rband.audiobookplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td><td>An internal Android permission that keeps system events inside the app</td></tr>
+</table></div>
+<p>No permission for the whole storage is requested: files are chosen in the system file picker.
+The motion sensor (accelerometer) needs no permission.</p>
+
+<h2>Deleting data</h2>
+<ul>
+  <li>Deleting a book in the app removes its information, bookmarks, cover and the copies the app made.</li>
+  <li>Your own files (imported from a folder or picked by hand) are deleted from the device <strong>only if you tick "Delete
+    files" when deleting the book</strong>. Before that the app shows which file or folder will be deleted; this cannot be
+    undone. Without the tick your files stay where they are.</li>
+  <li>Clearing the app's data in Android settings, or uninstalling the app, removes all of its data.</li>
+</ul>
+
+<h2>Children</h2>
+<p>The app collects no personal data, including children's data.</p>
+
+<h2>Changes</h2>
+<p>A changed policy is published at the same address with a new effective date.</p>
+
+<h2>Contact</h2>
+<p>Privacy questions: <a href="mailto:centerneon@gmail.com">centerneon@gmail.com</a></p>
+<p>If you write to this address, your e-mail address and message are used only to reply to you and are not shared
+with anyone.</p>
+</section>
+</main>
+</body>
+</html>
