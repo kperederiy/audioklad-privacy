@@ -35,7 +35,7 @@
 
 <section id="ru" lang="ru">
 <h1>Политика конфиденциальности AudioKlad</h1>
-<p class="date">Дата вступления в силу: 14 октября 2026 г.</p>
+<p class="date">Дата вступления в силу: 15 октября 2026 г.</p>
 <p>AudioKlad — приложение для прослушивания аудиокниг, которые уже есть на вашем устройстве. Эта политика описывает,
 какие данные приложение обрабатывает и где они хранятся.</p>
 
@@ -73,7 +73,7 @@
   <tr><td><code>WAKE_LOCK</code></td><td>Не даёт устройству «уснуть» во время воспроизведения при выключенном экране, чтобы звук и таймер сна работали (добавляет библиотека Media3)</td></tr>
   <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Добавляет библиотека Media3; приложение сеть не использует</td></tr>
   <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Добавляет библиотека WorkManager, на которой работают виджеты рабочего стола (Jetpack Glance): после перезагрузки она восстанавливает свои фоновые задачи. Приложение своих задач не планирует и при загрузке ничего не делает</td></tr>
-  <tr><td><code>dev.rband.audiobookplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td><td>Внутреннее разрешение Android для приёма системных событий только внутри самого приложения</td></tr>
+  <tr><td><code>dev.neon.audioklad.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td><td>Внутреннее разрешение Android для приёма системных событий только внутри самого приложения</td></tr>
 </table></div>
 <p>Разрешение на доступ ко всему хранилищу не запрашивается: файлы выбираются через системное окно выбора.
 Датчик движения (акселерометр) разрешения не требует.</p>
@@ -103,7 +103,7 @@
 
 <section id="en" lang="en">
 <h1>AudioKlad Privacy Policy</h1>
-<p class="date">Effective date: October 14, 2026</p>
+<p class="date">Effective date: October 15, 2026</p>
 <p>AudioKlad is a player for audiobooks that are already on your device. This policy describes what data the app
 handles and where it is kept.</p>
 
@@ -141,7 +141,7 @@ saved, not written to logs and not sent anywhere. While the timer is off the sen
   <tr><td><code>WAKE_LOCK</code></td><td>Keeps the device awake during playback with the screen off, so that the sound and the sleep timer keep working (added by the Media3 library)</td></tr>
   <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Added by the Media3 library; the app does not use the network</td></tr>
   <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Added by the WorkManager library that the home screen widgets (Jetpack Glance) run on: it restores its background work after a reboot. The app schedules no work of its own and does nothing at boot</td></tr>
-  <tr><td><code>dev.rband.audiobookplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td><td>An internal Android permission that keeps system events inside the app</td></tr>
+  <tr><td><code>dev.neon.audioklad.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td><td>An internal Android permission that keeps system events inside the app</td></tr>
 </table></div>
 <p>No permission for the whole storage is requested: files are chosen in the system file picker.
 The motion sensor (accelerometer) needs no permission.</p>
